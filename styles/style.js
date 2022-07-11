@@ -28,7 +28,7 @@ export const styles = StyleSheet.create({
           width: 400,
           marginLeft: '17%'
       },
-      RegistationText: {
+      registrationText: {
           fontSize: 25,
           color: "white"
       },
@@ -39,9 +39,7 @@ export const styles = StyleSheet.create({
         height: 40,
         padding: 10
       },
-      marginBetweenElements: {
-        marginRight: 10,
-        // height: 60,
-        // width: 60
+      spaceIcons: {
+        marginRight: 20,
       }
 });
