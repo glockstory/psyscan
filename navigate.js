@@ -1,9 +1,10 @@
 import React from "react";
-import RegistrationPage from "./components/RegistrationPage";
+import LoginPage from "./components/LoginPage";
 import WelcomePage from "./components/WelcomePage";
 
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
+import RegistrationPage from "./components/RegistrationPage";
 
 
 const Stack = createStackNavigator();
@@ -13,14 +14,19 @@ export default function Navigate() {
     <NavigationContainer>
         <Stack.Navigator>
             <Stack.Screen
-            name="Welcome"
+            name="Main"
             component={WelcomePage}
-            options= {{title: 'Главная'}}
+            options= {{title: 'Main'}}
+            />
+            <Stack.Screen
+            name="Login"
+            component={LoginPage}
+            options= {{title: 'Login'}}
             />
             <Stack.Screen
             name="Registration"
             component={RegistrationPage}
-            options= {{title: 'Регистрация'}}
+            options= {{title: 'Registration'}}
             />
         </Stack.Navigator>
     </NavigationContainer>
