@@ -8,13 +8,13 @@ import TextInputWrapper from "./TextInputWrapper";
 function RegistrationPage() {
   return (
     <SafeAreaView style={styles.centered}>
-      <TextInputWrapper name="First Name"></TextInputWrapper>
-      <TextInputWrapper name="Family Name"></TextInputWrapper>
-      <TextInputWrapper name="Date of Birth"></TextInputWrapper>
-      <TextInputWrapper name="Email"></TextInputWrapper>
-      <TextInputWrapper name="Mobile"></TextInputWrapper>
-      <TextInputWrapper name="Create Password"></TextInputWrapper>
-      <TextInputWrapper name="Confirm Password"></TextInputWrapper>
+      <TextInputWrapper name="FIRST NAME"></TextInputWrapper>
+      <TextInputWrapper name="FAMILY NAME"></TextInputWrapper>
+      <TextInputWrapper name="DATE OF BIRTH"></TextInputWrapper>
+      <TextInputWrapper name="EMAIL"></TextInputWrapper>
+      <TextInputWrapper name="MOBILE"></TextInputWrapper>
+      <TextInputWrapper name="CREATE PASSWORD"></TextInputWrapper>
+      <TextInputWrapper name="CONFIRM PASSWORD"></TextInputWrapper>
       <IconRow></IconRow>
       <GradientButton title="Register"></GradientButton>
     </SafeAreaView>
