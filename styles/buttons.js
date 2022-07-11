@@ -7,6 +7,8 @@ export const buttonStyles = StyleSheet.create({
     borderRadius: 10,
     paddingVertical: 10,
     paddingHorizontal: 12,
+    width: 300,
+    marginTop: 10
   },
   appButtonText: {
     fontSize: 18,

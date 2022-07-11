@@ -16,7 +16,10 @@ export default function LoginPage({ navigation }) {
       <View
         style={{ flexDirection: "column", justifyContent: "space-between" }}
       >
-        <Button title={"LOGIN"} />
+        <Button
+          title={"LOGIN"}
+          onPress={() => navigation.navigate("ChooseTest")}
+        />
         <Text> </Text>
         <Button
           title={"REGISTER"}
