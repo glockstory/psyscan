@@ -4,7 +4,7 @@ import { styles } from "../../styles/style";
 import GradientButton from "../Buttons/GradientButton";
 import { LinearGradient } from "expo-linear-gradient";
 
-export default function ChooseTest() {
+export default function ChooseTest({ navigation }) {
   return (
     <LinearGradient
       style={[styles.gradient, styles.centered]}
@@ -22,7 +22,10 @@ export default function ChooseTest() {
         LET US GET TO KNOW YOU BETTER
       </Text>
       <View>
-        <GradientButton title={"PRELIMINARY TESTING"} />
+        <GradientButton
+          onPress={() => navigation.navigate("PreliminarySex")}
+          title={"PRELIMINARY TESTING"}
+        />
         <GradientButton title={"ADVANCED TESTING"} />
         <GradientButton title={"GET RESULT"} />
       </View>
