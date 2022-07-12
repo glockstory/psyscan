@@ -15,14 +15,11 @@ export const styles = StyleSheet.create({
     color: "#888",
   },
   welcomeTo: {
-    position: "relative",
     fontFamily: "Roboto",
-    fontStyle: "normal",
     fontSize: 40,
     color: "white",
   },
   logo: {
-    position: "relative",
     height: 400,
     width: 400,
     marginLeft: "17%",
@@ -48,5 +45,6 @@ export const styles = StyleSheet.create({
   gradient: {
     height: "100%",
     width: "100%",
+    opacity: 0.9,
   },
 });

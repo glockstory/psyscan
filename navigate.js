@@ -1,11 +1,11 @@
 import React from "react";
-import LoginPage from "./components/LoginPage";
+import LoginPage from "./components/Authentification/LoginPage";
 import WelcomePage from "./components/WelcomePage";
 
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
-import RegistrationPage from "./components/RegistrationPage";
-import ChooseTest from "./components/ChooseTest";
+import RegistrationPage from "./components/Authentification/RegistrationPage";
+import ChooseTest from "./components/Authentification/ChooseTest";
 
 
 const Stack = createStackNavigator();

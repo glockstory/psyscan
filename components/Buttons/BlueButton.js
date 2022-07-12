@@ -3,10 +3,8 @@ import { buttonStyles } from "../../styles/buttons";
 import { LinearGradient } from "expo-linear-gradient";
 import { TouchableOpacity, Text } from "react-native";
 const BlueButton = ({ onPress, title }) => (
-  <TouchableOpacity onPress={onPress}>
-    <LinearGradient colors={"#00BCD7"} style={buttonStyles.appButtonContainer}>
-      <Text style={buttonStyles.appButtonText}>{title}</Text>
-    </LinearGradient>
+  <TouchableOpacity onPress={onPress} style={buttonStyles.blueButtonContainer}>
+    <Text style={buttonStyles.blueButtonText}>{title}</Text>
   </TouchableOpacity>
 );
 

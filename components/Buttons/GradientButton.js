@@ -2,15 +2,17 @@ import React from "react";
 import { buttonStyles } from "../../styles/buttons";
 import { LinearGradient } from "expo-linear-gradient";
 import { TouchableOpacity, Text } from "react-native";
-const BlueButton = ({ onPress, title }) => (
+const GradientButton = ({ onPress, title }) => (
   <TouchableOpacity onPress={onPress}>
     <LinearGradient
-      colors={["#004d40", "#009688"]}
-      style={buttonStyles.appButtonContainer}
+      start={{ x: 0, y: 0 }}
+      end={{ x: 1, y: 1 }}
+      colors={["#C9DDF1", "#8AC4E6", "#FFFFFF"]}
+      style={buttonStyles.gradientButtonContainer}
     >
-      <Text style={buttonStyles.appButtonText}>{title}</Text>
+      <Text style={buttonStyles.gradientButtonText}>{title}</Text>
     </LinearGradient>
   </TouchableOpacity>
 );
 
-export default BlueButton;
+export default GradientButton;
