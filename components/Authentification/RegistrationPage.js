@@ -2,7 +2,7 @@ import React from "react";
 import { styles } from "../../styles/style";
 import IconRow from "../Other/IconRow";
 import GradientButton from "../Buttons/GradientButton.js";
-import TextInputWrapper from "./TextInputWrapper";
+import TextInputWrapper from "../Other/TextInputWrapper";
 import { LinearGradient } from "expo-linear-gradient";
 import LinearArea from "../Other/LinearArea";
 
