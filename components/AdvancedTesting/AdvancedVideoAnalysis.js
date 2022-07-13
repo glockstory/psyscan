@@ -6,5 +6,5 @@ export default function AdvancedVideoAnalysis() {
     <View>
       <Text>AdvancedVideoAnalysis</Text>
     </View>
-  )
+  );
 }

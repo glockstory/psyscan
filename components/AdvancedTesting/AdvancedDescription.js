@@ -2,7 +2,7 @@ import React from "react";
 import { Text, SafeAreaView } from "react-native";
 import { StyleSheet } from "react-native-web";
 
-export default function AdvancedDescription() {
+export default function AdvancedDescription({ children }) {
   return (
     <SafeAreaView style={{ alignItems: "center" }}>
       <Text
@@ -28,11 +28,12 @@ export default function AdvancedDescription() {
           fontSize: 16,
           textAlign: "center",
           width: 220,
-          marginBottom: '40%'
+          marginBottom: "40%",
         }}
       >
-        Full test contains five different sections. To get to know you better,
-        it is recommended to complete all five of them.
+        {/* Full test contains five different sections. To get to know you better,
+        it is recommended to complete all five of them. */}
+        {children}
       </Text>
     </SafeAreaView>
   );

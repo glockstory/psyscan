@@ -10,7 +10,10 @@ import LinearArea from "../Other/LinearArea";
 export default function AdvancedTesting({ navigation }) {
   return (
     <LinearArea>
-      <AdvancedDescription></AdvancedDescription>
+      <AdvancedDescription>
+        {/* Full test contains five different sections. To get to know you better,
+        it is recommended to complete all five of them. */}
+      </AdvancedDescription>
       <GradientButton
         title={"YOUR ACTIVITY"}
         onPress={() => navigation.navigate("AdvancedYourActivity")}

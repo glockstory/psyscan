@@ -5,7 +5,7 @@ import GradientButton from "../Buttons/GradientButton.js";
 import TextInputWrapper from "./TextInputWrapper";
 import { LinearGradient } from "expo-linear-gradient";
 
-function RegistrationPage({navigation}) {
+function RegistrationPage({ navigation }) {
   return (
     <LinearGradient
       style={[styles.gradient, styles.centered]}
@@ -27,7 +27,10 @@ function RegistrationPage({navigation}) {
       <TextInputWrapper name="CREATE PASSWORD"></TextInputWrapper>
       <TextInputWrapper name="CONFIRM PASSWORD"></TextInputWrapper>
       <IconRow></IconRow>
-      <GradientButton title="Register" onPress={() => navigation.navigate("Login")}></GradientButton>
+      <GradientButton
+        title="Register"
+        onPress={() => navigation.navigate("Login")}
+      ></GradientButton>
     </LinearGradient>
   );
 }
