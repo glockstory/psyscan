@@ -5,7 +5,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import { styles } from "../../styles/style";
 import AdvancedDescription from "./AdvancedDescription";
 import GradientButton from "../Buttons/GradientButton";
-import LinearArea from "./LinearArea";
+import LinearArea from "../Other/LinearArea";
 
 export default function AdvancedTesting({ navigation }) {
   return (
