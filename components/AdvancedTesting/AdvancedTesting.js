@@ -5,24 +5,11 @@ import { LinearGradient } from "expo-linear-gradient";
 import { styles } from "../../styles/style";
 import AdvancedDescription from "./AdvancedDescription";
 import GradientButton from "../Buttons/GradientButton";
+import LinearArea from "./LinearArea";
 
 export default function AdvancedTesting({ navigation }) {
   return (
-    <LinearGradient
-      style={[
-        styles.gradient,
-        { alignItems: "center", justifyContent: "center" },
-      ]}
-      colors={["#66B6D3", "#0F86AB", "#005980"]}
-      start={{
-        x: 0,
-        y: 0,
-      }}
-      end={{
-        x: 0,
-        y: 1,
-      }}
-    >
+    <LinearArea>
       <AdvancedDescription></AdvancedDescription>
       <GradientButton
         title={"YOUR ACTIVITY"}
@@ -44,6 +31,6 @@ export default function AdvancedTesting({ navigation }) {
         title={"VIDEO ANALYSIS"}
         onPress={() => navigation.navigate("AdvancedVideoAnalysis")}
       ></GradientButton>
-    </LinearGradient>
+    </LinearArea>
   );
 }
