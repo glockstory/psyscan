@@ -63,7 +63,7 @@ export default function Navigate() {
         <Stack.Screen
           name="AdvancedAudioAnalysis"
           component={AdvancedAudioAnalysis}
-          options={{ title: "Video analysis" }}
+          options={{ title: "Audio analysis" }}
         />
         <Stack.Screen
           name="AdvancedFaceScan"
