@@ -7,6 +7,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import RegistrationPage from "./components/Authentification/RegistrationPage";
 import ChooseTest from "./components/Authentification/ChooseTest";
 import PreliminarySex from "./components/Preliminary/PreliminarySex";
+import AdvancedTesting from "./components/AdvancedTesting/AdvancedTesting";
 
 const Stack = createStackNavigator();
 
@@ -38,6 +39,11 @@ export default function Navigate() {
           name="PreliminarySex"
           component={PreliminarySex}
           options={{ title: "Sex doubts" }}
+        />
+        <Stack.Screen
+          name="AdvancedTesting"
+          component={AdvancedTesting}
+          options={{ title: "Advanced Testing" }}
         />
       </Stack.Navigator>
     </NavigationContainer>
