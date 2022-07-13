@@ -6,7 +6,7 @@ import { styles } from "../../styles/style";
 import AdvancedDescription from "./AdvancedDescription";
 import GradientButton from "../Buttons/GradientButton";
 
-export default function AdvancedTesting() {
+export default function AdvancedTesting({ navigation }) {
   return (
     <LinearGradient
       style={[
@@ -24,11 +24,26 @@ export default function AdvancedTesting() {
       }}
     >
       <AdvancedDescription></AdvancedDescription>
-      <GradientButton title={"YOUR ACTIVITY"}></GradientButton>
-      <GradientButton title={"TEXT ANALYSIS"}></GradientButton>
-      <GradientButton title={"AUDIO ANALYSIS"}></GradientButton>
-      <GradientButton title={"FACE SCAN"}></GradientButton>
-      <GradientButton title={"VIDEO ANALYSIS"}></GradientButton>
+      <GradientButton
+        title={"YOUR ACTIVITY"}
+        onPress={() => navigation.navigate("AdvancedYourActivity")}
+      ></GradientButton>
+      <GradientButton
+        title={"TEXT ANALYSIS"}
+        onPress={() => navigation.navigate("AdvancedTextAnalysis")}
+      ></GradientButton>
+      <GradientButton
+        title={"AUDIO ANALYSIS"}
+        onPress={() => navigation.navigate("AdvancedAudioAnalysis")}
+      ></GradientButton>
+      <GradientButton
+        title={"FACE SCAN"}
+        onPress={() => navigation.navigate("AdvancedFaceScan")}
+      ></GradientButton>
+      <GradientButton
+        title={"VIDEO ANALYSIS"}
+        onPress={() => navigation.navigate("AdvancedVideoAnalysis")}
+      ></GradientButton>
     </LinearGradient>
   );
 }
