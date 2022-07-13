@@ -7,6 +7,12 @@ import { NavigationContainer } from "@react-navigation/native";
 import RegistrationPage from "./components/Authentification/RegistrationPage";
 import ChooseTest from "./components/Authentification/ChooseTest";
 import PreliminarySex from "./components/Preliminary/PreliminarySex";
+import AdvancedTesting from "./components/AdvancedTesting/AdvancedTesting";
+import AdvancedYourActivity from "./components/AdvancedTesting/AdvancedYourActivity";
+import AdvancedVideoAnalysis from "./components/AdvancedTesting/AdvancedVideoAnalysis";
+import AdvancedTextAnalysis from "./components/AdvancedTesting/AdvancedTextAnalysis";
+import AdvancedAudioAnalysis from "./components/AdvancedTesting/AdvancedAudioAnalysis";
+import AdvancedFaceScan from "./components/AdvancedTesting/AdvancedFaceScan";
 
 const Stack = createStackNavigator();
 
@@ -38,6 +44,36 @@ export default function Navigate() {
           name="PreliminarySex"
           component={PreliminarySex}
           options={{ title: "Sex doubts" }}
+        />
+        <Stack.Screen
+          name="AdvancedTesting"
+          component={AdvancedTesting}
+          options={{ title: "Advanced Testing" }}
+        />
+        <Stack.Screen
+          name="AdvancedYourActivity"
+          component={AdvancedYourActivity}
+          options={{ title: "Your activity" }}
+        />
+        <Stack.Screen
+          name="AdvancedTextAnalysis"
+          component={AdvancedTextAnalysis}
+          options={{ title: "Text analysis" }}
+        />
+        <Stack.Screen
+          name="AdvancedAudioAnalysis"
+          component={AdvancedAudioAnalysis}
+          options={{ title: "Video analysis" }}
+        />
+        <Stack.Screen
+          name="AdvancedFaceScan"
+          component={AdvancedFaceScan}
+          options={{ title: "Face scan" }}
+        />
+        <Stack.Screen
+          name="AdvancedVideoAnalysis"
+          component={AdvancedVideoAnalysis}
+          options={{ title: "Video analysis" }}
         />
       </Stack.Navigator>
     </NavigationContainer>
