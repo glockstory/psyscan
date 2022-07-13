@@ -26,7 +26,10 @@ export default function ChooseTest({ navigation }) {
           onPress={() => navigation.navigate("PreliminarySex")}
           title={"PRELIMINARY TESTING"}
         />
-        <GradientButton title={"ADVANCED TESTING"} />
+        <GradientButton
+          onPress={() => navigation.navigate("AdvancedTesting")}
+          title={"ADVANCED TESTING"}
+        />
         <GradientButton title={"GET RESULT"} />
       </View>
     </LinearGradient>
