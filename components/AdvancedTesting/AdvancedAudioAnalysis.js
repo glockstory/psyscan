@@ -8,7 +8,7 @@ import Slider from "@react-native-community/slider";
 export default function AdvancedAudioAnalysis() {
   return (
     <LinearArea>
-      <AdvancedDescription></AdvancedDescription>
+      <AdvancedDescription>AUDIO ANALYSIS</AdvancedDescription>
       <View style={{ alignItems: "center" }}>
         <Image
           style={{ width: 132, height: 212 }}
