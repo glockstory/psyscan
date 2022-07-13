@@ -3,7 +3,7 @@ import React from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import { styles } from "../../styles/style";
 
-export default function LinearArea() {
+export default function LinearArea({children}) {
   return (
     <LinearGradient
       style={[
@@ -19,6 +19,8 @@ export default function LinearArea() {
         x: 0,
         y: 1,
       }}
-    ></LinearGradient>
+    >
+      {children}
+    </LinearGradient>
   );
 }
