@@ -1,6 +1,5 @@
 import React from "react";
-import { Button, Text, Image, View } from "react-native";
-import { LinearGradient } from "expo-linear-gradient";
+import { Text, Image } from "react-native";
 import { styles } from "../styles/style";
 import BlueButton from "./Buttons/BlueButton";
 import LinearArea from "./Other/LinearArea";
