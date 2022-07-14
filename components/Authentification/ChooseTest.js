@@ -10,14 +10,22 @@ export default function ChooseTest({ navigation }) {
       <Text style={chooseTestStyles.text}>LET US GET TO KNOW YOU BETTER</Text>
       <View>
         <GradientButton
+          marginBottomProps={10}
           onPress={() => navigation.navigate("PreliminarySex")}
           title={"PRELIMINARY TESTING"}
+          fontSizeProps={24}
         />
         <GradientButton
+          marginBottomProps={10}
           onPress={() => navigation.navigate("AdvancedTesting")}
           title={"ADVANCED TESTING"}
+          fontSizeProps={24}
         />
-        <GradientButton title={"GET RESULT"} />
+        <GradientButton
+          marginBottomProps={10}
+          fontSizeProps={24}
+          title={"GET RESULT"}
+        />
       </View>
     </LinearArea>
   );

@@ -48,4 +48,8 @@ export const styles = StyleSheet.create({
     width: "100%",
     opacity: 0.9,
   },
+  psyscanPanel: {
+    flexDirection: "row",
+  },
+  psyscanLabel: { marginHorizontal: 10 },
 });

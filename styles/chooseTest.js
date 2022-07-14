@@ -6,7 +6,7 @@ export const chooseTestStyles = StyleSheet.create({
     color: "white",
     textAlign: "center",
     width: "75%",
-    marginBottom: 100,
+    marginBottom: 50,
     marginTop: 100,
     minWidth: 150,
   },
