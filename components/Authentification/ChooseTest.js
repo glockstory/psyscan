@@ -1,16 +1,13 @@
 import React from "react";
 import { Text, View } from "react-native";
-import { styles } from "../../styles/style";
+import { chooseTestStyles } from "../../styles/chooseTest";
 import GradientButton from "../Buttons/GradientButton";
-import { LinearGradient } from "expo-linear-gradient";
 import LinearArea from "../Other/LinearArea";
 
 export default function ChooseTest({ navigation }) {
   return (
     <LinearArea>
-      <Text style={{ position: "relative", fontSize: 30, color: "white" }}>
-        LET US GET TO KNOW YOU BETTER
-      </Text>
+      <Text style={chooseTestStyles.text}>LET US GET TO KNOW YOU BETTER</Text>
       <View>
         <GradientButton
           onPress={() => navigation.navigate("PreliminarySex")}

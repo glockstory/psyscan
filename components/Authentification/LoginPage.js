@@ -1,6 +1,5 @@
 import React from "react";
 import { Text, View, TextInput } from "react-native";
-import { LinearGradient } from "expo-linear-gradient";
 import IconRow from "../Other/IconRow";
 import { styles } from "../../styles/style";
 import GradientButton from "../Buttons/GradientButton";
@@ -20,11 +19,16 @@ export default function LoginPage({ navigation }) {
         style={{ flexDirection: "column", justifyContent: "space-between" }}
       >
         <GradientButton
-          title={"LOGIN"}
+          heightProps={50}
+          widthProps={175}
+          fontSizeProps={24}
+          title={"LOG IN"}
           onPress={() => navigation.navigate("ChooseTest")}
         />
-        <Text> </Text>
         <GradientButton
+          heightProps={50}
+          widthProps={175}
+          fontSizeProps={24}
           title={"REGISTER"}
           onPress={() => navigation.navigate("Registration")}
         />

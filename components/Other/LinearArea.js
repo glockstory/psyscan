@@ -5,10 +5,7 @@ import { styles } from "../../styles/style";
 export default function LinearArea({ children }) {
   return (
     <LinearGradient
-      style={[
-        styles.gradient,
-        { alignItems: "center", justifyContent: "center" },
-      ]}
+      style={[styles.gradient, { alignItems: "center" }]}
       colors={["#66B6D3", "#0F86AB", "#005980"]}
       start={{
         x: 0,
