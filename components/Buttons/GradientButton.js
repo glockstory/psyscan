@@ -8,6 +8,7 @@ const GradientButton = ({
   fontSizeProps,
   heightProps = 75,
   widthProps = 300,
+  marginBottomProps = 5,
 }) => (
   <TouchableOpacity onPress={onPress}>
     <LinearGradient
@@ -19,7 +20,7 @@ const GradientButton = ({
         {
           height: heightProps,
           width: widthProps,
-          marginBottom: 10,
+          marginBottom: marginBottomProps,
           justifyContent: "center",
         },
       ]}
