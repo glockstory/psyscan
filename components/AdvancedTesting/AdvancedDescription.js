@@ -28,7 +28,7 @@ export default function AdvancedDescription({ children }) {
           fontSize: 16,
           textAlign: "center",
           width: 220,
-          marginBottom: "40%",
+          marginBottom: 50,
         }}
       >
         {/* Full test contains five different sections. To get to know you better,

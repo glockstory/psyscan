@@ -17,7 +17,7 @@ export default function LinearArea({ children }) {
       }}
     >
       {children}
-      <View style={styles.psyscanPanel}>
+      {/* <View style={styles.psyscanPanel}>
         <Image
           style={styles.leftArrow}
           source={require("../../assets/leftArrow.png")}
@@ -30,7 +30,7 @@ export default function LinearArea({ children }) {
           style={styles.rightArrow}
           source={require("../../assets/rightArrow.png")}
         />
-      </View>
+      </View> */}
     </LinearGradient>
   );
 }
