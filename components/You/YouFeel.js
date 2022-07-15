@@ -1,5 +1,6 @@
 import React from "react";
 import LinearArea from "../Other/LinearArea";
+import { Image } from "react-native";
 
 function YouFeel() {
   return (

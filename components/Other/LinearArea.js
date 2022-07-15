@@ -1,12 +1,11 @@
 import React from "react";
+import { useNavigation } from "@react-navigation/native";
 import { LinearGradient } from "expo-linear-gradient";
 import { styles } from "../../styles/style";
-import { Image, View, TouchableOpacity } from "react-native";
-export default function LinearArea({
-  visibility = true,
-  children,
-  navigation,
-}) {
+import { Image, TouchableOpacity, ScrollView } from "react-native";
+import PsyscanLabel from "./PsyscanLabel";
+function LinearArea({ visibility = true, children }) {
+  const navigation = useNavigation();
   return (
     <LinearGradient
       style={[styles.gradient, { alignItems: "center" }]}
@@ -20,32 +19,20 @@ export default function LinearArea({
         y: 1,
       }}
     >
-      {visibility ? (
-        <TouchableOpacity onPress={() => navigation.navigate("YouFeel")}>
-          <Image
-            onTap
+      <ScrollView contentContainerStyle={[{ alignItems: "center" }]}>
+        {visibility ? (
+          <TouchableOpacity
             style={styles.squareMenu}
-            source={require("../../assets/squareMenu.png")}
-          ></Image>
-        </TouchableOpacity>
-      ) : (
-        (visibility = false)
-      )}
-      {children}
-      <View style={styles.psyscanPanel}>
-        <Image
-          style={styles.leftArrow}
-          source={require("../../assets/leftArrow.png")}
-        />
-        <Image
-          style={styles.psyscanLabel}
-          source={require("../../assets/psyscanLabel.png")}
-        />
-        <Image
-          style={styles.rightArrow}
-          source={require("../../assets/rightArrow.png")}
-        />
-      </View>
+            onPress={() => navigation.navigate("YouFeel")}
+          >
+            <Image source={require("../../assets/squareMenu.png")}></Image>
+          </TouchableOpacity>
+        ) : null}
+        {children}
+      </ScrollView>
+      <PsyscanLabel></PsyscanLabel>
     </LinearGradient>
   );
 }
+
+export default LinearArea;
