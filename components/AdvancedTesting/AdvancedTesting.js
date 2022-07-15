@@ -11,8 +11,8 @@ export default function AdvancedTesting({ navigation }) {
   return (
     <LinearArea>
       <AdvancedDescription>
-        {/* Full test contains five different sections. To get to know you better,
-        it is recommended to complete all five of them. */}
+        Full test contains five different sections. To get to know you better,
+        it is recommended to complete all five of them.
       </AdvancedDescription>
       <GradientButton
         title={"YOUR ACTIVITY"}
