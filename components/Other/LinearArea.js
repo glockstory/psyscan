@@ -4,6 +4,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import { styles } from "../../styles/style";
 import { Image, TouchableOpacity, ScrollView } from "react-native";
 import PsyscanLabel from "./PsyscanLabel";
+
 function LinearArea({ visibility = true, children }) {
   const navigation = useNavigation();
   return (
@@ -25,7 +26,10 @@ function LinearArea({ visibility = true, children }) {
             style={styles.squareMenu}
             onPress={() => navigation.navigate("YouFeel")}
           >
-            <Image source={require("../../assets/squareMenu.png")}></Image>
+            <Image
+              style={styles.squareImage}
+              source={require("../../assets/squareMenu.png")}
+            ></Image>
           </TouchableOpacity>
         ) : null}
         {children}
