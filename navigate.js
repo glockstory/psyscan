@@ -14,6 +14,7 @@ import AdvancedTextAnalysis from "./components/AdvancedTesting/AdvancedTextAnaly
 import AdvancedAudioAnalysis from "./components/AdvancedTesting/AdvancedAudioAnalysis";
 import AdvancedFaceScan from "./components/AdvancedTesting/AdvancedFaceScan";
 import PreliminaryInfo from "./components/Preliminary/PreliminaryInfo";
+import YouFeel from "./components/You/YouFeel";
 
 const Stack = createStackNavigator();
 
@@ -80,6 +81,11 @@ export default function Navigate() {
           name="AdvancedVideoAnalysis"
           component={AdvancedVideoAnalysis}
           options={{ title: "Video analysis" }}
+        />
+        <Stack.Screen
+          name="YouFeel"
+          component={YouFeel}
+          options={{ title: "Your feeling" }}
         />
       </Stack.Navigator>
     </NavigationContainer>

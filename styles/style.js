@@ -52,4 +52,11 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
   },
   psyscanLabel: { marginHorizontal: 10 },
+  squareMenu: {
+    alignSelf: "flex-start",
+    width: 50,
+    height: 50,
+    marginLeft: "5%",
+    marginTop: "5%",
+  },
 });

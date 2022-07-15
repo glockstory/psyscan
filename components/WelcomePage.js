@@ -9,7 +9,7 @@ export default function WelcomePage({ navigation }) {
     navigation.navigate("Login");
   };
   return (
-    <LinearArea>
+    <LinearArea visibility={false}>
       <Text style={styles.welcomeTo}>Welcome to</Text>
       <Image source={require("../assets/logoNew.png")} style={styles.logoNew} />
       <BlueButton title={"Lets start"} onPress={loadScene}></BlueButton>

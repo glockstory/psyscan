@@ -1,8 +1,12 @@
 import React from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import { styles } from "../../styles/style";
-import { Image, View } from "react-native";
-export default function LinearArea({ children }) {
+import { Image, View, TouchableOpacity } from "react-native";
+export default function LinearArea({
+  visibility = true,
+  children,
+  navigation,
+}) {
   return (
     <LinearGradient
       style={[styles.gradient, { alignItems: "center" }]}
@@ -16,6 +20,17 @@ export default function LinearArea({ children }) {
         y: 1,
       }}
     >
+      {visibility ? (
+        <TouchableOpacity onPress={() => navigation.navigate("YouFeel")}>
+          <Image
+            onTap
+            style={styles.squareMenu}
+            source={require("../../assets/squareMenu.png")}
+          ></Image>
+        </TouchableOpacity>
+      ) : (
+        (visibility = false)
+      )}
       {children}
       <View style={styles.psyscanPanel}>
         <Image
