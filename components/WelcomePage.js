@@ -10,8 +10,8 @@ export default function WelcomePage({ navigation }) {
   };
   return (
     <LinearArea>
-      <Text style={styles.welcomeTo}>WELCOME TO</Text>
-      <Image source={require("../assets/logo.png")} style={styles.logo} />
+      <Text style={styles.welcomeTo}>Welcome to</Text>
+      <Image source={require("../assets/logoNew.png")} style={styles.logoNew} />
       <BlueButton title={"Lets start"} onPress={loadScene}></BlueButton>
     </LinearArea>
   );

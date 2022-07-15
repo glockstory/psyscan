@@ -1,15 +1,11 @@
-import { View, Text } from "react-native";
 import React from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import { styles } from "../../styles/style";
-
+import { Image, View } from "react-native";
 export default function LinearArea({ children }) {
   return (
     <LinearGradient
-      style={[
-        styles.gradient,
-        { alignItems: "center", justifyContent: "center" },
-      ]}
+      style={[styles.gradient, { alignItems: "center" }]}
       colors={["#66B6D3", "#0F86AB", "#005980"]}
       start={{
         x: 0,
@@ -21,6 +17,20 @@ export default function LinearArea({ children }) {
       }}
     >
       {children}
+      <View style={styles.psyscanPanel}>
+        <Image
+          style={styles.leftArrow}
+          source={require("../../assets/leftArrow.png")}
+        />
+        <Image
+          style={styles.psyscanLabel}
+          source={require("../../assets/psyscanLabel.png")}
+        />
+        <Image
+          style={styles.rightArrow}
+          source={require("../../assets/rightArrow.png")}
+        />
+      </View>
     </LinearGradient>
   );
 }
