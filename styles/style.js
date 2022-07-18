@@ -16,35 +16,40 @@ export const styles = StyleSheet.create({
   },
   welcomeTo: {
     fontFamily: "Roboto",
-    fontSize: 40,
+    fontSize: 18,
+    marginTop: "20%",
     color: "white",
+    textTransform: "uppercase",
   },
-  logo: {
-    height: 400,
+  logoNew: {
     width: 400,
-    marginLeft: "17%",
-  },
-  registrationText: {
-    fontSize: 25,
-    color: "white",
+    height: 400,
   },
   input: {
     borderWidth: 1,
     backgroundColor: "white",
-    width: 240,
-    height: 40,
+    minWidth: 150,
+    width: 300,
+    height: 35,
     padding: 10,
     borderRadius: 10,
     opacity: 0.8,
     borderWidth: 0,
     marginTop: 10,
+    marginBottom: 10,
   },
   spaceIcons: {
-    marginRight: 20,
+    marginRight: 10,
+    width: 20,
+    height: 20,
   },
   gradient: {
     height: "100%",
     width: "100%",
     opacity: 0.9,
   },
+  psyscanPanel: {
+    flexDirection: "row",
+  },
+  psyscanLabel: { marginHorizontal: 10 },
 });

@@ -1,24 +1,12 @@
 import React from "react";
-import { styles } from "../../styles/style";
 import IconRow from "../Other/IconRow";
 import GradientButton from "../Buttons/GradientButton.js";
-import TextInputWrapper from "./TextInputWrapper";
-import { LinearGradient } from "expo-linear-gradient";
+import TextInputWrapper from "../Other/TextInputWrapper";
+import LinearArea from "../Other/LinearArea";
 
-function RegistrationPage({navigation}) {
+function RegistrationPage({ navigation }) {
   return (
-    <LinearGradient
-      style={[styles.gradient, styles.centered]}
-      colors={["#66B6D3", "#0F86AB", "#005980"]}
-      start={{
-        x: 0,
-        y: 0,
-      }}
-      end={{
-        x: 1,
-        y: 1,
-      }}
-    >
+    <LinearArea>
       <TextInputWrapper name="FIRST NAME"></TextInputWrapper>
       <TextInputWrapper name="FAMILY NAME"></TextInputWrapper>
       <TextInputWrapper name="DATE OF BIRTH"></TextInputWrapper>
@@ -27,8 +15,11 @@ function RegistrationPage({navigation}) {
       <TextInputWrapper name="CREATE PASSWORD"></TextInputWrapper>
       <TextInputWrapper name="CONFIRM PASSWORD"></TextInputWrapper>
       <IconRow></IconRow>
-      <GradientButton title="Register" onPress={() => navigation.navigate("Login")}></GradientButton>
-    </LinearGradient>
+      <GradientButton
+        title="Register"
+        onPress={() => navigation.navigate("Login")}
+      ></GradientButton>
+    </LinearArea>
   );
 }
 
