@@ -5,7 +5,7 @@ import AdvancedDescription from "./AdvancedDescription";
 import { styles } from "../../styles/style";
 import GradientButton from "../Buttons/GradientButton";
 
-export default function AdvancedTextAnalysisWriting() {
+export default function AdvancedTextAnalysisWriting({ navigation }) {
   return (
     <LinearArea>
       <AdvancedDescription></AdvancedDescription>
@@ -19,10 +19,13 @@ export default function AdvancedTextAnalysisWriting() {
           borderRadius: 10,
           width: 300,
           height: 500,
-          marginTop: -30
+          marginTop: -30,
         }}
       ></TextInput>
-      <GradientButton title={'Save'}></GradientButton>
+      <GradientButton
+        title={"Save"}
+        onPress={() => navigation.navigate("AdvancedTextAnalysisResults")}
+      ></GradientButton>
     </LinearArea>
   );
 }
