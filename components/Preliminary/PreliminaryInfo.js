@@ -1,5 +1,6 @@
 import React from "react";
-import { Picker, Text } from "react-native-web";
+import { Picker } from "@react-native-picker/picker";
+import { Text } from "react-native";
 import LinearArea from "../Other/LinearArea";
 import TextInputWrapper from "../Other/TextInputWrapper";
 import { registrationStyles } from "../../styles/registration";
