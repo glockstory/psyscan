@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, SafeAreaView } from "react-native";
-import { StyleSheet } from "react-native-web";
+import Line from "../Other/Line";
 function PreliminaryDescription() {
   return (
     <SafeAreaView style={{ alignItems: "center" }}>
@@ -13,14 +13,7 @@ function PreliminaryDescription() {
       >
         PRELIMINARY TESTING
       </Text>
-      <Text
-        style={{
-          borderBottomColor: "white",
-          borderBottomWidth: StyleSheet.hairlineWidth,
-          paddingHorizontal: 50,
-          marginBottom: 10,
-        }}
-      ></Text>
+      <Line></Line>
       <Text
         style={{
           color: "white",

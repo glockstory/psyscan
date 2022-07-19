@@ -51,5 +51,17 @@ export const styles = StyleSheet.create({
   psyscanPanel: {
     flexDirection: "row",
   },
-  psyscanLabel: { marginHorizontal: 10 },
+  psyscanLabel: { marginHorizontal: 50, resizeMode: "contain", width: 150 },
+  squareMenu: {
+    alignSelf: "flex-start",
+    marginLeft: "5%",
+    marginTop: "5%",
+  },
+  leftArrow: { width: 20, resizeMode: "contain" },
+  rightArrow: { width: 20, resizeMode: "contain" },
+  squareImage: {
+    resizeMode: "contain",
+    width: 50,
+    height: 50,
+  },
 });

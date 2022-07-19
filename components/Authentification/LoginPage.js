@@ -7,7 +7,7 @@ import LinearArea from "../Other/LinearArea";
 import { loginPageStyles } from "../../styles/loginPage";
 export default function LoginPage({ navigation }) {
   return (
-    <LinearArea>
+    <LinearArea visibility={false}>
       <Text style={loginPageStyles.title}>Welcome</Text>
       <Text style={loginPageStyles.registrationText}>EMAIL</Text>
       <TextInput style={styles.input} placeholder="example@example.com" />
