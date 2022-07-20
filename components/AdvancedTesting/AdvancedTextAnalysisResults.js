@@ -27,7 +27,7 @@ export default function AdvancedTextAnalysisResults() {
         onValueChange={(value) => setValueAgreeableness(value)}
       ></Slider>
       <Text textAlign={"center"}>
-        CONSCIENTIOUSNESS: {conscientiousnessValue}{" "}
+        CONSCIENTIOUSNESS: {conscientiousnessValue}
       </Text>
       <Slider
         style={{ width: 200, height: 40 }}
@@ -68,7 +68,7 @@ export default function AdvancedTextAnalysisResults() {
         value={selfDisciplineValue}
         onValueChange={(value) => setValueSelfDiscipline(value)}
       ></Slider>
-      <GradientButton title={'MORE DETAILS'}></GradientButton>
+      <GradientButton title={"MORE DETAILS"}></GradientButton>
     </LinearArea>
   );
 }
