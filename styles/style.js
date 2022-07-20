@@ -31,7 +31,6 @@ export const styles = StyleSheet.create({
   },
 
   input: {
-    borderWidth: 1,
     backgroundColor: "white",
     minWidth: 150,
     width: 300,
