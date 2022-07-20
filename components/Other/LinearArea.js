@@ -9,7 +9,7 @@ function LinearArea({ visibility = true, children }) {
   const navigation = useNavigation();
   return (
     <LinearGradient
-      style={[styles.gradient, { alignItems: "center" }]}
+      style={[styles.gradient]}
       colors={["#66B6D3", "#0F86AB", "#005980"]}
       start={{
         x: 0,
@@ -20,7 +20,13 @@ function LinearArea({ visibility = true, children }) {
         y: 1,
       }}
     >
-      <ScrollView contentContainerStyle={[{ alignItems: "center" }]}>
+      <ScrollView
+        contentContainerStyle={[
+          {
+            alignItems: "center",
+          },
+        ]}
+      >
         {visibility ? (
           <TouchableOpacity
             style={styles.squareMenu}
