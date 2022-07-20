@@ -1,16 +1,16 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, Button } from "react-native";
 import React, { useState } from "react";
 import LinearArea from "../Other/LinearArea";
 import AdvancedDescription from "./AdvancedDescription";
 import GradientButton from "../Buttons/GradientButton";
 import PickerLanguage from "./Components/PickerLanguage";
-// import CheckBox from "@react-native-community/checkbox";
+//  import CheckBox from "@react-native-community/checkbox";
 import PickerLangLevel from "./Components/PickerLangLevel";
 
 export default function AdvancedTextAnalysis({ navigation }) {
-  const [toggleCheckBox, setToggleCheckBox] = useState(false);
+  const [selectedIndex, setSelectedIndex] = useState(0);
   return (
-    <LinearArea>
+    <LinearArea visibility={false}>
       <AdvancedDescription>TEXT ANALYSIS</AdvancedDescription>
       <View style={{ alignItems: "center" }}>
         <Image
@@ -28,12 +28,7 @@ export default function AdvancedTextAnalysis({ navigation }) {
           Choose language
         </Text>
         <PickerLanguage />
-        <View style={{ flexDirection: "row" }}>
-          {/* <CheckBox
-            disabled={false}
-            value={toggleCheckBox}
-            onValueChange={(newValue) => setToggleCheckBox(newValue)}
-          ></CheckBox> */}
+        <View style={{ flexDirection: "column", alignItems: "center" }}>
           <Text
             style={{
               color: "white",
@@ -42,6 +37,12 @@ export default function AdvancedTextAnalysis({ navigation }) {
           >
             IS IT YOUR MOTHERTONGUE LANGUAGE?
           </Text>
+          <View
+            style={{ flexDirection: "row", justifyContent: "space-between" }}
+          >
+            <Button title="yes"></Button>
+            <Button title="no"></Button>
+          </View>
         </View>
         <Text
           style={{

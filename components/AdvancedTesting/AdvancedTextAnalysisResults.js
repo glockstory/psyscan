@@ -5,7 +5,7 @@ import AdvancedDescription from "./AdvancedDescription";
 import Slider from "@react-native-community/slider";
 import GradientButton from "../Buttons/GradientButton";
 
-export default function AdvancedTextAnalysisResults() {
+export default function AdvancedTextAnalysisResults({ navigation }) {
   const [agreeablenessValue, setValueAgreeableness] = useState(90);
   const [conscientiousnessValue, setValueConscientiousness] = useState(52);
   const [achieveValue, setValueAchieve] = useState(59);
@@ -68,7 +68,10 @@ export default function AdvancedTextAnalysisResults() {
         value={selfDisciplineValue}
         onValueChange={(value) => setValueSelfDiscipline(value)}
       ></Slider>
-      <GradientButton title={"MORE DETAILS"}></GradientButton>
+      <GradientButton
+        title={"MORE DETAILS"}
+        onPress={() => navigation.navigate("AdvancedTextAnalysisResultsInfo")}
+      ></GradientButton>
     </LinearArea>
   );
 }
