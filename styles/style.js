@@ -77,4 +77,17 @@ export const styles = StyleSheet.create({
     width: 50,
     height: 50,
   },
+
+  menuPanel: {
+    position: "absolute",
+    alignSelf: "flex-start",
+    marginTop: "20%",
+    marginLeft: "5%",
+    width: 175,
+    height: 200,
+    backgroundColor: "white",
+    borderRadius: 10,
+    elevation: 20,
+    shadowColor: "black",
+  },
 });
