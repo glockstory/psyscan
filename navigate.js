@@ -17,6 +17,7 @@ import PreliminaryInfo from "./components/Preliminary/PreliminaryInfo";
 import AdvancedTextAnalysisWriting from "./components/AdvancedTesting/AdvancedTextAnalysisWriting";
 import YouFeel from "./components/You/YouFeel";
 import AdvancedTextAnalysisResults from "./components/AdvancedTesting/AdvancedTextAnalysisResults";
+import AdvancedTextAnalysisResultsInfo from "./components/AdvancedTesting/AdvancedTextAnalysisResultsInfo";
 
 const Stack = createStackNavigator();
 
@@ -88,8 +89,8 @@ export default function Navigate() {
           name="AdvancedTextAnalysisWriting"
           component={AdvancedTextAnalysisWriting}
           options={{ title: "Writing" }}
-             />
-         <Stack.Screen
+        />
+        <Stack.Screen
           name="YouFeel"
           component={YouFeel}
           options={{ title: "Your feeling" }}
@@ -99,7 +100,11 @@ export default function Navigate() {
           component={AdvancedTextAnalysisResults}
           options={{ title: "Results" }}
         />
-        
+        <Stack.Screen
+          name="AdvancedTextAnalysisResultsInfo"
+          component={AdvancedTextAnalysisResultsInfo}
+          options={{ title: "Results" }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
