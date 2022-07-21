@@ -9,6 +9,7 @@ export default function ChooseTest({ navigation }) {
   const [textAdvancedVisiblity, setTextAdvancedVisibility] = useState(false);
   const [textPreliminaryVisibility, setTextPreliminaryVisibility] =
     useState(false);
+  const [textLoremVisibility, setTextLoremVisibility] = useState(false);
 
   return (
     <LinearArea>
@@ -64,11 +65,29 @@ export default function ChooseTest({ navigation }) {
           </View>
         ) : null}
         <GradientButtonTriangle
-          onPressButton={null}
+          onPressButton={() => setTextLoremVisibility(!textLoremVisibility)}
           marginBottomProps={10}
           fontSizeProps={24}
           title={"GET RESULT"}
         />
+        {textLoremVisibility ? (
+          <View style={{ alignItems: "center" }}>
+            <Text style={{ width: 300, color: "white", textAlign: "center" }}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </Text>
+            <BlueButton
+              onPress={() => navigation.navigate("AdvancedTesting")}
+              title={"start the test"}
+              fontSize={12}
+              height={35}
+            ></BlueButton>
+          </View>
+        ) : null}
       </ScrollView>
     </LinearArea>
   );
