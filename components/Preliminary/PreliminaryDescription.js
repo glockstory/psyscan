@@ -3,7 +3,7 @@ import { Text, SafeAreaView } from "react-native";
 import Line from "../Other/Line";
 function PreliminaryDescription() {
   return (
-    <SafeAreaView style={{ alignItems: "center" }}>
+    <SafeAreaView style={{ width: "50%", alignItems: "center" }}>
       <Text
         style={{
           color: "white",
