@@ -23,7 +23,6 @@ export const buttonStyles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 12,
     width: 150,
-    height: 50,
     marginTop: 10,
   },
   blueButtonText: {
