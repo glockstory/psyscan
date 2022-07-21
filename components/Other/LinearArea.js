@@ -1,12 +1,11 @@
-import React from "react";
-import { useNavigation } from "@react-navigation/native";
+import React, { useState } from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import { styles } from "../../styles/style";
 import { Image, TouchableOpacity, ScrollView } from "react-native";
 import PsyscanLabel from "./PsyscanLabel";
-
+import MenuPanel from "./MenuPanel";
 function LinearArea({ visibility = true, children }) {
-  const navigation = useNavigation();
+  const [menuVisibility, setMenuVisibility] = useState(false);
   return (
     <LinearGradient
       style={[styles.gradient]}
@@ -28,9 +27,13 @@ function LinearArea({ visibility = true, children }) {
         ]}
       >
         {visibility ? (
+          // <TouchableOpacity
+          //   style={styles.squareMenu}
+          //   onPress={() => navigation.navigate("YouFeel")}
+          // >
           <TouchableOpacity
             style={styles.squareMenu}
-            onPress={() => navigation.navigate("YouFeel")}
+            onPress={() => setMenuVisibility(!menuVisibility)}
           >
             <Image
               style={styles.squareImage}
@@ -41,6 +44,7 @@ function LinearArea({ visibility = true, children }) {
         {children}
       </ScrollView>
       <PsyscanLabel></PsyscanLabel>
+      {menuVisibility ? <MenuPanel></MenuPanel> : null}
     </LinearGradient>
   );
 }
