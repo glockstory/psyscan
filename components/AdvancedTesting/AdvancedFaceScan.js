@@ -9,7 +9,7 @@ export default function AdvancedFaceScan() {
     <LinearArea>
       <AdvancedDescription>FACE SCAN</AdvancedDescription>
       <Image
-        style={{ width: 250, height: 335, marginBottom: 10, display: "block" }}
+        style={{ width: 250, height: 335, marginBottom: 10}}
         source={require("../../assets/facescan.png")}
       ></Image>
       <Text
