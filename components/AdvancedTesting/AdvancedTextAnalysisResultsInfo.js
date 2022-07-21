@@ -8,7 +8,7 @@ export default function AdvancedTextAnalysisResultsInfo() {
   return (
     <LinearArea>
       <AdvancedDescription>YOUR RESULTS</AdvancedDescription>
-      <View style={{ alignItems: "flex-start" }}>
+      <View style={{ alignItems: "flex-start", marginLeft: '2%' }}>
         <Text style={{ color: "green", fontSize: 18 }}>
           ✔ BE INFLUENCED BY FAMILY WHEN MAKING PRODUCT PURCHASES
         </Text>
