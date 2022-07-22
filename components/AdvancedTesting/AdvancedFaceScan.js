@@ -4,7 +4,7 @@ import LinearArea from "../Other/LinearArea";
 import AdvancedDescription from "./AdvancedDescription";
 import GradientButton from "../Buttons/GradientButton";
 
-export default function AdvancedFaceScan() {
+export default function AdvancedFaceScan({navigation}) {
   return (
     <LinearArea>
       <AdvancedDescription>FACE SCAN</AdvancedDescription>
@@ -24,7 +24,7 @@ export default function AdvancedFaceScan() {
         Explain what is going to happen, why we need to scan. Give instuctions
         to the user.
       </Text>
-      <GradientButton title={'START THE SCAN'}></GradientButton>
+      <GradientButton title={'START THE SCAN'} onPress={() => navigation.navigate("AdvancedFaceScanCamera")}></GradientButton>
     </LinearArea>
   );
 }
