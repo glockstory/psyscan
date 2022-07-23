@@ -3,15 +3,32 @@ import { Picker } from "@react-native-picker/picker";
 import { Text, View } from "react-native";
 import LinearArea from "../Other/LinearArea";
 import TextInputWrapper from "../Other/TextInputWrapper";
+import Line from "../Other/Line";
 import { registrationStyles } from "../../styles/registration";
-import { styles } from "../../styles/style";
 function PreliminaryInfo() {
   const [selectedSex, setSelectedSex] = useState();
   const [selectedCountry, setSelectedCountry] = useState();
   return (
     <LinearArea>
-      <Text style={[registrationStyles.title, { marginBottom: 10 }]}>
-        GENDER
+      <Text
+        style={{
+          color: "white",
+          fontSize: 24,
+          textAlign: "center",
+          width: "50%",
+          textTransform: "uppercase",
+        }}
+      >
+        preliminary testing
+      </Text>
+      <Line></Line>
+      <Text
+        style={[
+          registrationStyles.title,
+          { textTransform: "uppercase", marginBottom: 10 },
+        ]}
+      >
+        gender
       </Text>
       <View
         style={{
@@ -39,8 +56,13 @@ function PreliminaryInfo() {
         </Picker>
       </View>
       <TextInputWrapper name="NATIONALITY"></TextInputWrapper>
-      <Text style={[registrationStyles.title, { marginBottom: 10 }]}>
-        LOCATION
+      <Text
+        style={[
+          registrationStyles.title,
+          { textTransform: "uppercase", marginBottom: 10 },
+        ]}
+      >
+        location
       </Text>
       <View
         style={{

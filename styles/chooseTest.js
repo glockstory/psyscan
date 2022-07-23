@@ -7,7 +7,7 @@ export const chooseTestStyles = StyleSheet.create({
     textAlign: "center",
     width: "75%",
     marginBottom: 50,
-    marginTop: 100,
+    marginTop: 50,
     minWidth: 150,
   },
 });
