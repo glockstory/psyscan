@@ -13,4 +13,12 @@ export const loginPageStyles = StyleSheet.create({
     color: "white",
     textTransform: "uppercase",
   },
+  error: {
+    marginVertical: 10,
+    color: "red",
+  },
+  text: {
+    color: "white",
+    textTransform: "uppercase",
+  },
 });
