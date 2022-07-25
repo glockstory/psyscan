@@ -6,7 +6,11 @@ function TextInputWrapper(props) {
   return (
     <SafeAreaView style={registrationStyles.content}>
       <Text style={registrationStyles.title}>{props.name}</Text>
-      <TextInput style={styles.input}></TextInput>
+      <TextInput
+        value={props.value}
+        onChangeText={props.setValue}
+        style={styles.input}
+      ></TextInput>
     </SafeAreaView>
   );
 }

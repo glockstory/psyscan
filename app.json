@@ -24,7 +24,8 @@
       "adaptiveIcon": {
         "foregroundImage": "",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.glockstory.psyscan"
     },
     "web": {
       "favicon": "./assets/favicon.png"

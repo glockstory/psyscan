@@ -6,7 +6,15 @@ export default function PickerLanguage() {
   return (
     <Picker
       selectedValue={selectedLanguage}
-      onValueChange={(itemValue, itemIndex) => setSelectedLanguage}
+      style={{
+        width: 200,
+        height: 35,
+        minWidth: 150,
+        backgroundColor: "white",
+        borderRadius: 100,
+        opacity: 0.8,
+      }}
+      onValueChange={(itemValue, itemIndex) => setSelectedLanguage(itemValue)}
     >
       <Picker.Item label="Italian" value="italy" />
       <Picker.Item label="English" value="eng" />
