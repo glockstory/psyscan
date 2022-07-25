@@ -1,20 +1,23 @@
 # PsyScan
 ## Setup
-### 1. Install Expo
-Follow official docs to install Expo CLI: https://docs.expo.dev/get-started/installation/
-### 2. Installing requirement libraries
+### 1. Установка Expo 
+Для установки Expo следуйте указаниям в инструкции: https://docs.expo.dev/get-started/installation/
+### Важно ! 
+Для запуска приложения необходимо установить Expo-client на мобильное устройство соответствующей версии.
+### 2. Установка package.json 
 ```
 npm install 
 ```
-### 3. Run app
+Установка необходимых библиотек из файла package.json для запуска приложения.
+### 3. Запуск приложения
 ```
 npm start
 ```
-This command will run Expo developer tools on localhost. And start Metro Bundler (check React Native docs for learning more about Metro Bundler).
+Команда запускает приложение на http://localhost:19002. 
 
-https://reactnative.dev/docs/environment-setup
+Приложение можно запустить как в вебе, так и на мобильном устройстве через приложение Expo-client. (Приложение в вебе является неполным и представляет не все реализованные возможности, поскольку большая часть библиотек направлена именно на мобильное использование). 
 
-Follow instructions in the terminal.
+При запуске следуйте инструкциям в терминале. Для получения более подробной информации следуйте указаниям в инструкции:  https://docs.expo.dev/get-started/create-a-new-app/. 
 
 ## Приложение реализовано на версии React-native 0.68.2 и Expo 45.0.0.
 
