@@ -9,7 +9,7 @@ export default function AdvancedVideoAnalysis() {
     <LinearArea>
       <AdvancedDescription>FACE SCAN</AdvancedDescription>
       <Image
-        style={{ width: 200, height: 200, marginBottom: 10, display: "block" }}
+        style={{ width: 200, height: 200, marginBottom: 10}}
         source={require("../../assets/videoanalysis.png")}
       ></Image>
       <Text
