@@ -7,11 +7,11 @@ import LinearArea from "../Other/LinearArea";
 import { useValidation } from "react-native-form-validator";
 
 function RegistrationPage({ navigation }) {
-  const [name, setName] = useState("Your name");
-  const [secondName, setSecondName] = useState("Your second name");
-  const [email, setEmail] = useState("example@gmail.com");
-  const [number, setNumber] = useState("88888888888");
-  const [date, setDate] = useState("2022-12-31");
+  const [name, setName] = useState("");
+  const [secondName, setSecondName] = useState("");
+  const [email, setEmail] = useState("");
+  const [number, setNumber] = useState("");
+  const [date, setDate] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
@@ -51,7 +51,7 @@ function RegistrationPage({ navigation }) {
       <TextInputWrapper
         value={secondName}
         setValue={setSecondName}
-        name="FAMILY NAME"
+        name="SECOND NAME"
       ></TextInputWrapper>
       <TextInputWrapper
         value={date}

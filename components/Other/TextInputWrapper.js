@@ -10,6 +10,7 @@ function TextInputWrapper(props) {
         value={props.value}
         onChangeText={props.setValue}
         style={styles.input}
+        placeholder={props.value}
       ></TextInput>
     </SafeAreaView>
   );

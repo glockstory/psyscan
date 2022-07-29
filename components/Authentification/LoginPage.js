@@ -9,7 +9,7 @@ import { useValidation } from "react-native-form-validator";
 
 export default function LoginPage({ navigation }) {
   const [email, setEmail] = useState("");
-  const [pass, setPass] = useState("example");
+  const [pass, setPass] = useState("");
   const {
     validate,
     isFieldInError,
