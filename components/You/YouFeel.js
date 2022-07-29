@@ -7,7 +7,7 @@ import BlueButton from "../Buttons/BlueButton";
 import { styles } from "../../styles/style";
 import Slider from "@react-native-community/slider";
 
-function YouFeel() {
+export default function YouFeelScreen() {
   const [rangeHours, setRangeHours] = useState("0");
   const [rangeActivity, setRangeActivity] = useState("0");
   const [rangeMood, setRangeMood] = useState("none");
@@ -113,5 +113,3 @@ function YouFeel() {
     </LinearArea>
   );
 }
-
-export default YouFeel;
