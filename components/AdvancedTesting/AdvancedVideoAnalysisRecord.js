@@ -1,12 +1,7 @@
-import { StyleSheet, Text, View, TouchableOpacity, Button } from "react-native";
-import React from "react";
-import LinearArea from "../Other/LinearArea";
-import AdvancedDescription from "./AdvancedDescription";
-import GradientButton from "../Buttons/GradientButton";
+import { StyleSheet, Text, View, Button, SafeAreaView } from "react-native";
 import { useEffect, useState, useRef } from "react";
 import { Camera } from "expo-camera";
 import { Video } from "expo-av";
-import { SafeAreaView } from "react-native-web";
 import { shareAsync } from "expo-sharing";
 import * as MediaLibrary from "expo-media-library";
 
@@ -23,14 +18,12 @@ export default function AdvancedVideoAnalysisRecord() {
       const cameraPermission = await Camera.requestCameraPermissionsAsync();
       const microphonePermission =
         await Camera.requestMicrophonePermissionsAsync();
-      const mediaLibraryPermissions =
+      const mediaLibraryPermission =
         await MediaLibrary.requestPermissionsAsync();
 
       setHasCameraPermission(cameraPermission.status === "granted");
       setHasMicrophonePermission(microphonePermission.status === "granted");
-      setHasMediaLibraryPermission(
-        mediaLibraryPermissions.status === "granted"
-      );
+      setHasMediaLibraryPermission(mediaLibraryPermission.status === "granted");
     })();
   }, []);
 
@@ -38,18 +31,19 @@ export default function AdvancedVideoAnalysisRecord() {
     hasCameraPermission === undefined ||
     hasMicrophonePermission === undefined
   ) {
-    return <Text> Requestion permissions...</Text>;
+    return <Text>Requestion permissions...</Text>;
   } else if (!hasCameraPermission) {
-    return <Text> Permission for camera not granted.</Text>;
+    return <Text>Permission for camera not granted.</Text>;
   }
 
-  let recordVideo = async () => {
+  let recordVideo = () => {
     setIsRecording(true);
     let options = {
       quality: "1080p",
       maxDuration: 60,
       mute: false,
     };
+
     cameraRef.current.recordAsync(options).then((recordedVideo) => {
       setVideo(recordedVideo);
       setIsRecording(false);
@@ -62,7 +56,7 @@ export default function AdvancedVideoAnalysisRecord() {
   };
 
   if (video) {
-    let shareVideo = async () => {
+    let shareVideo = () => {
       shareAsync(video.uri).then(() => {
         setVideo(undefined);
       });
@@ -83,11 +77,11 @@ export default function AdvancedVideoAnalysisRecord() {
           resizeMode="contain"
           isLooping
         />
-        <Button title="Share" onPress={shareVideo}></Button>
+        <Button title="Share" onPress={shareVideo} />
         {hasMediaLibraryPermission ? (
           <Button title="Save" onPress={saveVideo} />
         ) : undefined}
-        <Button title="Discard" onPress={() => setVideo(undefined)}></Button>
+        <Button title="Discard" onPress={() => setVideo(undefined)} />
       </SafeAreaView>
     );
   }
@@ -98,7 +92,7 @@ export default function AdvancedVideoAnalysisRecord() {
         <Button
           title={isRecording ? "Stop Recording" : "Record Video"}
           onPress={isRecording ? stopRecording : recordVideo}
-        ></Button>
+        />
       </View>
     </Camera>
   );
@@ -111,8 +105,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   buttonContainer: {
-    backgroundColor: "cyan",
-    alignItems: "flex-end",
+    backgroundColor: "#fff",
+    alignSelf: "flex-end",
   },
   video: {
     flex: 1,
