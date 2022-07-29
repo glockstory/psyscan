@@ -66,6 +66,7 @@ export default function AdvancedVideoAnalysisRecord() {
       MediaLibrary.saveToLibraryAsync(video.uri).then(() => {
         setVideo(undefined);
       });
+      console.log(video.uri);
     };
 
     return (
@@ -102,10 +103,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center",
-    justifyContent: "center",
+    flexDirection: "column",
+    flexGrow: 1,
+    justifyContent: "space-between",
   },
   buttonContainer: {
-    backgroundColor: "#fff",
+    backgroundColor: "cyan",
     alignSelf: "flex-end",
   },
   video: {
